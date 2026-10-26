@@ -1,4 +1,4 @@
-```javascript
+
 export const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:5000/api/v1';
 
@@ -203,4 +203,3 @@ export function retryEvidenceMedia(mysteryId, assetId) {
 export function getMediaContentUrl(mysteryId, assetId) {
   return `${API_BASE_URL}/mysteries/${encodeURIComponent(mysteryId)}/media/${encodeURIComponent(assetId)}/content`;
 }
-```
