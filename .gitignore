@@ -1,0 +1,48 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+.nyc_output/
+.vite/
+.cache/
+*.tsbuildinfo
+
+# Local environment and secret configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+.envrc
+*.local
+
+# Logs and diagnostics
+*.log
+*.log.*
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+coverage-final.json
+
+# Generated media, uploaded files, and local runtime data
+/server/storage/
+**/uploads/
+**/data/
+**/db-data/
+**/mongo-data/
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bson
+playwright-report/
+test-results/
+
+# Temporary files and operating-system metadata
+**/tmp/
+**/temp/
+**/.tmp/
+*.tmp
+.DS_Store
+Thumbs.db
+Desktop.ini

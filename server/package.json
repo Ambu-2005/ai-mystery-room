@@ -1,0 +1,30 @@
+{
+  "name": "@ai-mystery-room/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "vitest run tests/auth.test.js tests/health.test.js tests/media.test.js tests/mystery.test.js tests/investigation.test.js",
+    "test:mongo:integration": "vitest run tests/mystery.mongo.integration.test.js",
+    "test:media:integration": "vitest run tests/media.integration.test.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.0.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^9.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4",
+    "vitest": "^5.0.0"
+  }
+}
