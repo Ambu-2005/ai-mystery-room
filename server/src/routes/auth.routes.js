@@ -20,12 +20,10 @@ function publicUser(user) {
 }
 
 function cookieOptions() {
-  const isProduction = env.NODE_ENV === 'production';
-
   return {
     httpOnly: true,
-    secure: isProduction,
-    sameSite: isProduction ? 'none' : 'lax',
+    secure: true,
+    sameSite: 'none',
     path: '/api/v1/',
     maxAge: SESSION_SECONDS * 1000,
   };
